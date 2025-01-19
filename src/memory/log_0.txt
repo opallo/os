@@ -1,0 +1,1 @@
+I can assist in file management tasks such as creating, deleting, and editing files. Additionally, I can help with directory operations like listing directory contents and creating directories. Furthermore, I can handle text operations such as reading and writing to files.

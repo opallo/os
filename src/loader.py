@@ -3,6 +3,7 @@ from autogen import register_function
 from toolshed import function_registrations as fr
 
 def load_and_register_functions(agent, user_proxy):
+  # Call the function multiple times to register more agents to functions
   
   for reg in fr.function_registrations['registrations']:
     module_name = reg['module']

@@ -1,0 +1,74 @@
+Folder PATH listing
+Volume serial number is 9C36-259D
+C:.
+³   app.py
+³   EngineeringDept.py
+³   loader.py
+³   output.txt
+³   
+ÃÄÄÄagents
+³   ³   agents.py
+³   ³   __init__.py
+³   ³   
+³   ÀÄÄÄ__pycache__
+³           agents.cpython-310.pyc
+³           __init__.cpython-310.pyc
+³           
+ÃÄÄÄmemory
+³       log_0.txt
+³       reflections.txt
+³       
+ÃÄÄÄprompts
+³   ³   prompts.py
+³   ³   __init__.py
+³   ³   
+³   ÀÄÄÄ__pycache__
+³           prompts.cpython-310.pyc
+³           __init__.cpython-310.pyc
+³           
+ÃÄÄÄtoolshed
+³   ³   create_tool.py
+³   ³   function_registrations.py
+³   ³   __init__.py
+³   ³   
+³   ÃÄÄÄfile_operations
+³   ³   ³   append_file.py
+³   ³   ³   create_directory.py
+³   ³   ³   create_file.py
+³   ³   ³   delete_file.py
+³   ³   ³   list_directory_contents.py
+³   ³   ³   overwrite_file.py
+³   ³   ³   read_file.py
+³   ³   ³   __init__.py
+³   ³   ³   
+³   ³   ÀÄÄÄ__pycache__
+³   ³           append_file.cpython-310.pyc
+³   ³           create_directory.cpython-310.pyc
+³   ³           create_file.cpython-310.pyc
+³   ³           delete_file.cpython-310.pyc
+³   ³           list_directory_contents.cpython-310.pyc
+³   ³           overwrite_file.cpython-310.pyc
+³   ³           read_file.cpython-310.pyc
+³   ³           register_tool.cpython-310.pyc
+³   ³           __init__.cpython-310.pyc
+³   ³           
+³   ÃÄÄÄtoolgen
+³   ³   ³   register_tool.py
+³   ³   ³   __init__.py
+³   ³   ³   
+³   ³   ÀÄÄÄ__pycache__
+³   ³           register_tool.cpython-310.pyc
+³   ³           __init__.cpython-310.pyc
+³   ³           
+³   ÀÄÄÄ__pycache__
+³           function_registrations.cpython-310.pyc
+³           tools.cpython-310.pyc
+³           __init__.cpython-310.pyc
+³           
+ÃÄÄÄtransitions
+³       transitions.py
+³       __init__.py
+³       
+ÀÄÄÄ__pycache__
+        loader.cpython-310.pyc
+        

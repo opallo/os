@@ -14,15 +14,6 @@ gpt35t = config_list["config_list"][0]
 
 print('Creating agents...\n')
 
-# =========== INITIALIZERS ============
-
-initializer = UserProxyAgent(
-  name="Init",
-  code_execution_config={
-    "use_docker":False
-  }
-)
-
 # ============= PROXIES ===============
 
 user_proxy = UserProxyAgent(
@@ -30,45 +21,9 @@ user_proxy = UserProxyAgent(
     llm_config=False,
     human_input_mode='ALWAYS',
     code_execution_config={
-        "use_docker": False
-    }
-)
-
-# ============= EXECUTORS =============
-
-executor = UserProxyAgent(
-    name="executor",
-    system_message=prompts.executor_prompt,
-    human_input_mode="ALWAYS",
-    llm_config=gpt35t,
-    code_execution_config={
-        "last_n_messages": 3,
-        "work_dir": prompts.working_directory,
         "use_docker": False,
-    },  
-)
-
-# ============== CODERS ================
-
-coder = AssistantAgent(
-  name="coder",
-  llm_config=gpt35t,
-  system_message=str(prompts.tool_coder_prompt)
-)
-
-
-# =============== RESEARCHERS ===================
-
-scientist = AssistantAgent(
-    name="scientist",
-    llm_config=gpt35t,
-    system_message=prompts.scientist_prompt,
-)
-
-reviewer = AssistantAgent(
-    name="reviewer",
-    system_message=prompts.reviewer_prompt,
-    llm_config=gpt35t,
+        "work_dir": "sandbox"
+    }
 )
 
 # ============== BRAINSTORMERS =================
@@ -81,37 +36,3 @@ agent_1 = ConversableAgent(
     function_map=None,
     human_input_mode="NEVER",
 )
-
-agent_2 = ConversableAgent(
-    name="agent_2",
-    system_message=str(prompts.agent2_prompt),
-    llm_config=gpt35t,
-    code_execution_config=False,
-    function_map=None,
-    human_input_mode="NEVER",
-)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# print("Using: " + str(assistant.llm_config["model"]) + "\n")
-
-# assistant = AssistantAgent(
-#     name="assistant",
-#     system_message=str(prompts.aios_prompt),
-#     llm_config=gpt35t,
-#     code_execution_config=False,
-#     function_map=None,
-#     human_input_mode="TERMINATE",
-# )
