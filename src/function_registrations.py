@@ -44,6 +44,11 @@ function_registrations = {
             "module": "toolshed.create_tool",
             "name": "create_tool",
             "description": "A tool for creating tools"
+        },
+        {
+            "module": "toolshed.fetch_arxiv_topic",
+            "name": "fetch_arxiv_topic",
+            "description": "Tool to fetch a research topic from arXiv based on a query."
         }
     ]
 }
